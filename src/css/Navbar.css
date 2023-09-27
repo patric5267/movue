@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+   
+}
+
+.navbarcon {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0rem;
+    z-index: 1;
+}
+
+.navbarcon .navbox {
+    width: 100%;
+    height: 3.5rem;
+    background-color: #42304e91;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.rightcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rightcon div {
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.rightcon .img img {
+    width: 4rem;
+    margin-left: 1rem;
+}
+
+.leftcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.leftcon div {
+    margin-right: 1rem;
+}
+
+.leftcon button {
+    width: 4.8rem;
+    height: 1.9rem;
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.leftcon input {
+    outline: none;
+    height: 1.9rem;
+    width: 18rem;
+    padding-left: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .leftcon input{
+        width: 12rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .navbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftcon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .leftcon input{
+        width: 14rem;
+    }
+    .rightcon div {
+        font-size: 1.1rem;
+    }
+    .navbarcon .navbox {
+        height: 5.5rem;
+    }
+    .rightcon {
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .rightcon div {
+        margin-right: 1rem;
+    }
+}

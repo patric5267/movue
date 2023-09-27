@@ -1,0 +1,308 @@
+.infocon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  
+}
+.infoinner {
+    width: 99%;
+    display: flex;
+    justify-content: center;
+}
+.posterimg {
+    /* border: 1px solid white; */
+    width: 62rem;
+    display: flex;
+    justify-content: center;
+}
+.posterimg img {
+    width: 62rem;
+    height: 30rem;
+}
+.secondconinfo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    position: relative;
+    top: -15rem;
+}
+.secondconinfo .infodescinner{
+    /* border: 1px solid white; */
+    width: 61rem;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.secondconinfo .smallposter{
+    /* border: 1px solid white; */
+    width: 17rem;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.smallposter img{
+    border-radius: 1rem;
+}
+.secondconinfo .pointdesc{
+    /* border: 1px solid white; */
+    width: 44rem;
+    height: 22rem;
+    color: white;   
+    background-color: #00000045;
+    margin-bottom: 0;
+}
+.genres{
+    display: flex;
+    justify-content: start;
+}
+.genres div{
+        /* border: 1px solid white; */
+        margin-right: 1rem;
+        height: 1.5rem;
+        width: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        margin-top: 0.4rem;
+}
+.pointsecond{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 22rem;
+    /* border: 1px solid red; */
+}
+.pointsecond div{
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+}
+.pointsecond .reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    /* border: 1px solid white; */
+}
+.reviews div{
+    margin-right: 1rem;
+}
+.infothirdcon{
+    display: flex;
+    justify-content: center;
+}
+.infothirdcon .link{
+    /* border: 1px solid white; */
+    width: 62rem;
+    height: 4rem;
+    color: white;
+    margin-top: -15rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.genres div{
+    border: 1px solid white;
+    margin-right: 1rem
+}
+.descoverview p{
+    width: 646px;
+    text-align: justify;
+    margin-top: 2rem;
+    line-height: 1.4rem;
+}
+.companies img{
+    color: white;
+}
+.title{
+    font-size: 1.2rem;
+}
+.link .linkname{
+    font-size: 2rem;
+}
+.link button{
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    height: 2rem;
+    outline: none;
+    cursor: pointer;
+    background-color: yellow;
+    border: 0;
+}
+button img{
+    width: 5rem;
+    height: 1.9rem;
+}
+.fourthcon{
+    display: flex;
+  align-items: center;
+  flex-direction: column;
+    margin-top: -10rem;
+    margin-bottom: 1rem;
+}
+.fourthcon h1{
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.fourthcon .companies{
+    /* border: 1px solid white; */
+    width: 62rem;
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+}
+.companies div{
+    /* border: 1px solid white; */
+    height: 10rem;
+    border-radius: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffc2;
+}
+.companies div img{
+    width: 8rem;
+    height: 4rem;
+}
+@media only screen and (max-width: 768px) {
+    .secondconinfo .infodescinner {
+        /* border: 1px solid white; */
+        width: 46rem;
+        display: flex;
+        justify-content: center;
+    }
+    .posterimg img {
+        width: 48rem;
+        height: 30rem;
+    }
+    .secondconinfo .smallposter {
+        width: 24rem;
+    }
+    .descoverview p {
+        width: 457px;
+    }
+    .secondconinfo{
+        height: 24rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .posterimg img {
+        width: 425px;
+        height: 16rem;
+    }
+    .secondconinfo .infodescinner {
+        /* border: 1px solid white; */
+        width: 26rem;
+       
+    }
+    .secondconinfo .smallposter{
+        display: none;
+    }
+    .secondconinfo {
+        top: -2rem;
+    }
+    .infothirdcon .link{
+        margin-top: -2rem;
+        width: 26rem
+    }
+    .descoverview p {
+        width: 393px;
+        margin-top: 1rem;
+    }
+    .pointsecond{
+        height: 25rem;
+    }
+    .link button {
+        width: 5rem;
+        height: 2.4rem;
+        background-color: yellow;
+    }
+    button img{
+        width: 5rem;
+        height: 2.5rem;
+    }
+    .fourthcon {
+        margin-top: 0rem;
+       
+    }
+    .fourthcon .companies {
+        width: 26rem;
+        grid-template-columns: 6rem 6rem;
+        justify-content: space-evenly;
+        row-gap: 1rem;
+    }
+    .companies div{
+        /* border: 1px solid white; */
+        height: 6rem;
+        border-radius: 16rem;
+    }
+    .companies div img {
+        width: 5rem;
+        height: 2rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .secondconinfo .pointdesc {
+        /* border: 1px solid white; */
+        width: 22.4rem;
+    }
+    .secondconinfo .infodescinner {
+        /* border: 1px solid white; */
+        width: 24rem;
+    }
+    .posterimg img {
+        width: 375px;
+        height: 16rem;
+    }
+    .posterimg {
+        /* border: 1px solid white; */
+        width: 24rem;
+    }   
+    .secondconinfo {
+        top: -2rem;
+    } 
+    .infothirdcon .link{
+        margin-top: -1rem;
+        width: 23rem;
+    }
+    .descoverview p {
+        width: 341px;
+        text-align: justify;
+    }
+    .pointsecond{
+        height: 26rem;
+    }
+    .link button {
+        width: 5rem;
+        height: 2.4rem;
+        background-color: yellow;
+     
+    }
+    button img{
+        width: 5rem;
+        height: 2.5rem;
+    }
+    .fourthcon {
+        margin-top: 0rem;
+    }
+    .fourthcon .companies {
+        width: 26rem;
+        grid-template-columns: 7rem 7rem;
+        justify-content: space-evenly;
+        row-gap: 1rem;
+    }
+    .companies div{
+        /* border: 1px solid white; */
+        height: 7rem;
+        border-radius: 16rem;
+    }
+    .companies div img {
+        width: 5rem;
+        height: 2rem;
+    }
+}

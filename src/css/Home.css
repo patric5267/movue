@@ -1,0 +1,240 @@
+.coursel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner {
+    width: 100%;
+    height: 39.2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inner img {
+    width: 100%;
+}
+
+.shadowcon {
+    display: flex;
+    justify-content: center;
+}
+
+.shadowcon .shadow {
+    width: 100%;
+    height: 39.2rem;
+    position: absolute;
+    background-color: #25222282;
+    top: 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.shadowcon .shadow .shadowinner {
+    width: 100%;
+    height: 26rem;
+    margin-top: 22rem;
+    color: white;
+    background-color: #00000000;
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+}
+
+.date p {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+
+}
+
+.shadowinner div {
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+
+.desc {
+    width: 45rem;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+html {
+    background-color: black;
+}
+
+.shadowinner h1 {
+    text-align: start;
+
+}
+
+.secondcon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    background-color: black;
+    color: white;
+}
+
+.secondcon .head {
+    width: 99%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+}
+
+.head h1 {
+    margin-left: 0.5rem;
+}
+
+.secondcon .popular {
+    width: 99%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 16rem 16rem 16rem 16rem;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+}
+
+.popular div {
+    height: 21rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    transition: 1s;
+}
+
+.popular div img {
+    width: 16rem;
+}
+
+.hover h1 {
+    width: 14rem;
+    height: 8rem;
+    text-align: center;
+
+}
+
+.hover p {
+    font-size: 2rem;
+
+}
+
+.hover p:hover {
+    display: block;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head .arrow {
+    width: 4rem;
+    height: 3.2rem;
+    margin-top: 0.3rem;
+    margin-right: 0.4rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.carousel .control-dots {
+    bottom: 75px;
+}
+.popular div:hover{
+    transform: scale(1.2);
+}
+@media only screen and (max-width: 1440px) {
+    .shadowcon .shadow .shadowinner {
+        margin-top: 18rem
+    }
+
+}
+@media only screen and (max-width: 1024px) {
+    .secondcon .popular {
+        grid-template-columns: 14rem 14rem 14rem 14rem;
+        justify-content: space-evenly;
+    }
+
+    .inner {
+        height: 29.2rem;
+    }
+
+    .shadowcon .shadow .shadowinner {
+        margin-top: 14rem
+    }
+
+    .desc {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .shadowcon .shadow {
+        height: 30rem;
+    }
+
+    .inner {
+        height: 30rem;
+    }
+
+    .shadowcon .shadow .shadowinner {
+        width: 100%;
+        height: 11rem;
+        margin-top: 16rem;
+        color: white;
+    }
+
+    .secondcon .popular {
+        grid-template-columns: 11rem 11rem 11rem 11rem;
+        justify-content: space-evenly;
+    }
+
+    .popular div img {
+        width: 11rem;
+    }
+
+    .popular div {
+        height: 15rem;
+    }
+
+    .desc {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .shadowinner {
+        display: none;
+    }
+
+    .inner {
+        height: 16rem;
+    }
+
+    .shadowcon .shadow {
+        height: 16rem;
+        top: 0rem;
+        display: none;
+    }
+
+    .secondcon .popular {
+        grid-template-columns: 10rem 10rem;
+        justify-content: space-evenly;
+        row-gap: 2rem;
+    }
+
+    .popular div {
+        height: 13rem;
+    }
+
+    .hover {
+        width: 0rem;
+    }
+}
